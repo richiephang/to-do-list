@@ -1,8 +1,8 @@
-<h1>This is the todo page.hahah</h1>
+<h1>This is the todo page.</h1>
 
 <ul>
     {% for todo_item in all_items %}
-    <li>{{ todo_item.content}}
+    <li>{{ todo_item.title}}
         <form action="/deleteTodo/{{todo_item.id}}/" style="display: inline;" method="post">{% csrf_token %}
             <input type="submit" value="X"/>
         </form>
@@ -11,6 +11,6 @@
 </ul>
 
 <form action="/addTodo/" method="post">{% csrf_token %}
-    <input type="text" name="content"/>
+    <input type="text" name="title"/>
     <input type="submit" value="Add"/>
 </form>
