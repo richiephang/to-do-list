@@ -1,9 +1,7 @@
 {% extends 'todolist/main.html' %}
 {% block content %}
 
-<div class="japan-word">
- <h1>今日の事、今日で終わるべき</h1> 
-</div>
+
 
 <div class="header-bar">
     <div>
@@ -39,7 +37,7 @@
             {% if task.complete %}
             <div class="task-title">
                     <div class="task-complete-icon"></div>
-                    <i><s><a href="{% url 'task-update' task.id %}">{{task}}</a></s></i>
+                    <i><a href="{% url 'task-update' task.id %}"><span class="outer"><span class="inner">{{task}}</span></span></a></i>
             </div>
 
             <form method="POST" action="{% url 'task-delete' task.id %}">

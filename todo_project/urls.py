@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 # from todolist.views import todoView, addTodo, deleteTodo
 # from todolist.views import TaskList
 urlpatterns = [
@@ -23,4 +25,4 @@ urlpatterns = [
     # path('todolist/', todoView),
     # path('addTodo/' , addTodo),
     # path('deleteTodo/<int:todo_id>/' , deleteTodo),
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
