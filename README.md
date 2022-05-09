@@ -4,7 +4,7 @@ https://glacial-thicket-51750.herokuapp.com/
 
 - Created using Django Class-based views
 - To Do list app with User Registration, Login, Search and full Create Read Update and DELETE functionality.
-- Interactive background implemented using JavaScript
+- Interactive background JavaScript source code: https://codepen.io/hakimel/pen/bzrZGo
 
 ![image](https://user-images.githubusercontent.com/76896343/167290255-4316d510-e086-44cf-af2a-3dfc10790f81.png)
 
